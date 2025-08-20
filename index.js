@@ -30,11 +30,11 @@ class Persona {
         console.log(`Hola, soy ${this.nombre} y soy ${this.profesion}`)
     }
 
-    get password() { //geters
+    get password() { //getters: controla como se LEE la propiedad
         return ''
     }
 
-    set edad(nuevaEdad) {
+    set edad(nuevaEdad) { //setters: controla como se MODIFICA la propiedad
         if (nuevaEdad > 0)  {
             this._edad = nuevaEdad
     } else {
